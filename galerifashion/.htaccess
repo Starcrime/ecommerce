@@ -1,0 +1,36 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteRule ^home$ media.php?hal=home [L]
+RewriteRule ^profil-kami\.html$ media.php?module=profilkami&id=$1 [L]
+RewriteRule ^kontak media.php?hal=contact&id=$1 [L]
+RewriteRule ^carabeli media.php?hal=carabeli&id=$1 [L]
+RewriteRule ^listproduk media.php?hal=produk-lists&id=$1 [L]
+RewriteRule ^gridproduk media.php?hal=produk-grid&id=$1 [L]
+RewriteRule ^produk-(.*) media.php?hal=detail&id=$1 [L]
+RewriteRule ^kategori-(.*) media.php?hal=produk-lists-kategori&id=$1 [L]
+RewriteRule ^kategoriharga-(.*) media.php?hal=produk-lists-harga&id=$1 [L]
+RewriteRule ^keranjang-(.*)\.html$ media.php?module=keranjangbelanja&id=$1 [L]
+RewriteRule ^selesai-(.*)\.html$ media.php?module=selesaibelanja&id=$1 [L]
+RewriteRule ^kategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1 [L]
+RewriteRule ^halkategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1&halkategori=$2 [L]
+RewriteRule ^simpan-transaksi\.html$ media.php?module=simpantransaksi&id=$1 [L]
+RewriteRule ^hubungi-kami\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+RewriteRule ^semua-produk\.html$ media.php?module=semuaproduk&id=$1 [L]
+RewriteRule ^halproduk-(.*)\.html$ media.php?module=semuaproduk&halproduk=$1 [L]
+RewriteRule ^hasil-pencarian\.html$ media.php?module=hasilcari&id=$1 [L]
+
+RewriteRule ^statis-(.*)\.html$ media.php?module=halamanstatis&id=$1 [L]
+RewriteRule ^haldownload-(.*)\.html$ media.php?module=semuadownload&haldownload=$1 [L]
+RewriteRule ^semua-download\.html$ media.php?module=semuadownload&id=$1 [L]
+RewriteRule ^hasil-poling\.html$ media.php?module=hasilpoling&id=$1 [L]
+RewriteRule ^lihat-poling\.html$ media.php?module=lihatpoling&id=$1 [L]
+
+
+
+Options All -Indexes
+
+</IfModule>
+

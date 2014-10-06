@@ -1,0 +1,11 @@
+sudah di coba di
+-xampp 1.8.3
+-xampp 1.8.2
+-xampplite
+-apache2triad 1.5.4
+
+toko online ini saya ambil dari penyedia template gratis. ada beberapa fitur yang masih coba dikembangkan. mudah2an lokomedia lovers bisa mengembangkannya.
+
+best regards
+
+fathstudio.com
